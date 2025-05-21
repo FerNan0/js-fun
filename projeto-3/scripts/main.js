@@ -1,6 +1,6 @@
 import { getAddedProducts } from "./Actions.js"
 import { fetchProductsData } from "./ProductsService.js"
-import { showProducts } from "./ProductsView.js"
+import { showKartProducts, showProducts } from "./ProductsView.js"
 import { search } from "./SearchProducts.js"
 
 export async function main() {
@@ -13,7 +13,7 @@ export async function main() {
 
 export function loadKart() {
     let products = getAddedProducts()
-    showProducts(products)
+    showKartProducts(products)
 }
 window.loadKart = loadKart;
 window.main = main;

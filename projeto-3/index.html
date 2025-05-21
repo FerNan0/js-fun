@@ -23,19 +23,20 @@
         <li><a href="#">Contato</a></li>
         <li><a href="#" onclick="loadKart()">Carinho</a></li>
       </ul>
+      <h1 id="totalValue">Total: R$ <span id="amount">0.00</span> </h1>
     </nav>
   </section>
 
   <section class="search-bar">
     <div class="search-container">
       <input type="text" id="searchInput" placeholder="Buscar produtos..." />
-      <span class="search-icon">🔍</span>
+      <span id="searchIcon" class="search-icon">🔍</span>
     </div>
   </section>
 
   <section class="products"></section>
 
-  <footer>
+  <footer>    
     <p>&copy; 2025 Tech Loja. Todos os direitos reservados.</p>
   </footer>
   <script src="scripts/main.js" type="module"></script>
